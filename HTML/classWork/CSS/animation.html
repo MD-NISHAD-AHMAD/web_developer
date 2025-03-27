@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+     .hello{
+            text-transform: capitalize;
+            color: goldenrod;
+            font-weight: 700;
+            font-size: 85px;
+            text-align: center;
+        }
+        .hello:hover{
+            transform: scale(2);
+            transition: ease-out;
+            transition-duration: 0.5s;
+            transition-delay: 0.7s;
+            background-image:url(https://static.vecteezy.com/system/resources/thumbnails/037/068/468/small/ai-generated-luminous-grunge-concrete-wall-generative-ai-photo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: red;
+
+        }
+        .animation1,
+        .animation2{
+            animation-name: first;
+            animation-duration: 2.4s;
+            animation-delay: 0.3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            text-align: center;
+            background: tomato;
+            font-weight: 700;
+            font-size: 85px;
+        }
+        .animation1{    
+            animation-name: second !important;
+            background: blueviolet !important;
+            color: white;
+        }
+        @keyframes first {
+            from {
+                translate: 200vw 0;
+                scale: 200% 1;
+            to{
+                translate: 0 0;
+                scale:200% 1;
+            }
+            }
+        }
+        @keyframes second {
+            from{
+                translate: -200vw 0;
+                scale: 200% 1;
+            }
+            to{
+                translate: 0 0;
+                scale:100% 1;
+            }
+            
+
+        }
+        img{
+            animation-name: logo;
+            animation-duration: 2.4s;
+            animation-delay: 0.3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            text-align: center;
+            background: tomato;
+            font-weight: 700;
+            font-size: 85px;
+            mix-blend-mode: color-burn;
+        }
+        @keyframes logo {
+            0%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head> 
+<body>
+    <p class="hello">NISHAD</p>
+    <p class="animation1">RAEES</p>
+    <p class="animation2">SOHAIL</p><br>
+    <img src="https://c.files.bbci.co.uk/C5CC/production/_89663605_instagram_logo_976.jpg" alt="">
+</body>
+</html>

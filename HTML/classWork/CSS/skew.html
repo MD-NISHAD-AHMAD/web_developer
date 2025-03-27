@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            margin: 20px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            color: #fff;
+            font-weight: bold;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        .skew-x{
+            transform: skewX(20deg);
+        }
+        .skew-y{
+            transform: skewY(-20deg);
+        }
+        .skew-xy{
+            transform: skew(
+                20deg,
+                10deg
+            );
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text">css skew example</h1>
+    <div class="box"><img src="https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg" alt="" height="850" width="850"></div>
+
+    <div class="box skew-x"><img src="https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg" alt="" height="850" width="850"></div>
+
+    <div class="box skew-y"><img src="https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg" alt="" height="850" width="850"></div>
+
+    <div class="box skew-xy"><img src="https://tinypng.com/images/social/website.jpg" alt="" height="850" width="850"></div>
+</body>
+</html>

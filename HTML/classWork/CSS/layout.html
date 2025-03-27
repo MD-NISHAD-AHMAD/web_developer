@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+}
+.navbar {
+  width: 100%;
+  background: rebeccapurple;
+  height: 100px;
+  font-size: xx-large;
+}
+section {
+  border: 1px solid red;
+  width: 100%;
+  background: aqua;
+  height: 300px;
+}
+footer {
+  border: 1px solid blue;
+  height: 200px;
+  background: green;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+  border: 1px solid #fff;
+  height: 70px;
+  background: #000;
+  
+}
+
+.sec_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">navbar</nav>
+    <main class="main">
+      <section class="aside"><aside>aside</aside></section>
+      <section class="sec_section">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+      </section>
+    </main>
+    <footer class="footer">footer</footer>
+  </body>
+</html>

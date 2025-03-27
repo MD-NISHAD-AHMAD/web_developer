@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        h1{
+           color:black;
+           font-weight: 900;
+           position: relative;
+
+        }
+          h1::after{
+                content:"";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 0%;
+                background-color: #333;
+                transition: all ease 2ms;
+                
+
+          }
+          h1:hover::after{
+                 width: 100%;
+
+              
+          }
+        h2{
+            color: red;
+
+        }
+    
+        
+        textarea{
+            background: #b30909;
+            border-width: 2px;
+            border-style: dotted;
+            border-color: orange;
+        }
+        ul{ background-color: rgb(179, 179, 202);
+            border-width: 3px;
+            border-style: dashed;
+            border-color: rgb(169, 205, 40);
+        }
+        table{
+            background:pink;
+        }
+        ol{
+            background:skyblue;
+            border-width: 4px;
+            border-style:inset;
+        }
+        body{
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210902/pngtree-real-shot-blue-sky-and-white-clouds-pure-sky-material-image_786713.jpg");
+            background-repeat: no-repeat;
+           background-size: cover;
+
+        }
+        th{
+            color: forestgreen;
+        }
+        source:hover{
+            background: hsl(129, 92%, 46%);
+            color:#b30909
+        }
+        .chacha{
+            color:rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Welcome to my website</h1>
+    <h2 align="middle">This is my project</h2> 
+    <textarea>interact my another webs pages.</textarea><br>
+    <div>i live in andheri west</div><br>
+    <span>what do you like</span>
+    <ol>
+        <li>cheese burger</li>
+        <li>noodles</li>
+        <li>coffee</li>
+        <li>chocolates</li>
+    </ol>
+    <hr>
+    <div>my favourite places</div>
+     <ul>
+       <li>Beach</li>
+       <li>Cricket ground</li>
+       <li>Bihar</li>
+       <li>marine lines</li>
+     </ul>
+     <hr>
+     <table align="center" border="1" width="50" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Age</th>
+            <th>Number</th>
+        </tr>
+        <tr>
+            <td>Md Raees</td>
+            <td>banglore</td>
+            <td>34</td>
+            <td>9699457126</td>
+        </tr>
+        <tr>
+            <td>Md Sohail</td>
+            <td>Patna</td>
+            <td>30</td>
+            <td>8298363808</td>
+        </tr>
+        <tr>
+            <td>Md Nishad</td>
+            <td>mumbai</td>
+            <td>22</td>
+            <td>9199839397</td>
+        </tr>
+     </table>
+     <hr>
+     <img src="https://www.tallengestore.com/cdn/shop/products/Handsome_Baby_Boy_Ready_For_A_Party_6b666188-47a6-4072-ae5f-3702ed46cdc2_large.jpg?v=1568961359" alt="" height="450" width="450">
+     <p class="chacha">Future baby of my friends...
+     </p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+ *{ 
+    /* background: rgb(200, 235, 135); */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text{
+    color:aqua;
+    text-align: center;
+    
+}
+#text{
+    color:yellow;
+    text-align: center;
+    
+}
+h3{
+    text-align: center;
+    color: white;
+    
+}
+body{
+    background-image:url("https://static.vecteezy.com/system/resources/thumbnails/029/470/675/small_2x/ai-generated-ai-generative-purple-pink-color-sunset-evening-nature-outdoor-lake-with-mountains-landscape-background-graphic-art-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

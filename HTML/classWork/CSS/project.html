@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .conatiner {
+        border: 4px solid red;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+      }
+      .parent1,.parent2{
+        border: 1px solid blue;
+        width: 50%;
+      }
+
+      .parent1{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpqZxO9zDdRixNKPoW7ssIMBkTWFQWza3H2g&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+      }
+      .parent2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 5px;
+      }
+
+      .child1,.child2,.child3,.child4{
+        border: 1px solid green;
+      }
+      .child1{
+        background-image: url(https://cdn.pixabay.com/photo/2019/05/16/20/15/online-4208112_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+      }
+      .child2{
+        background-image: url(https://www.shutterstock.com/image-photo/closeup-shot-robin-bird-pixabay-260nw-2555878517.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        text-align: center;
+
+      }
+      .child3{
+        background-image: url(https://cdn.pixabay.com/photo/2014/12/17/21/30/fantasy-571940_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+      }
+      .child4{
+        background-image: url(https://pbs.twimg.com/media/GS1Nc_nXAAA4aKh?format=jpg&name=large);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="parent1">healty and wealthy</div>
+      <section class="parent2">
+        <div class="child1">this is first images</div>
+        <div class="child2">this is second images</div>
+        <div class="child3">this is third images</div>
+        <div class="child4">this is fourth images</div>
+      </section>
+    </div>
+  </body>
+</html>
