@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: value;
+        }
+        .text:hover{
+            font-size: 4rem !important;
+        }
+        h2::before{
+            counter-increment: value;
+            content: "points" counter(value) "-";
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text"> using css counter</h1>
+    <h2>HTML tutorial</h2>
+    <h2>CSS tutorial</h2>
+    <h2>JAVASCRIPT tutorial</h2>
+    <h2>REACT.JS tutorial</h2>
+    <h2>PYTHON tutorial</h2>
+</body>
+</html>

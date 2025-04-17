@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: white;
+ }
+ header {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logobakery {
+    font-size: 1.5em;
+    font-weight:bold;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+}
+nav ul li {
+    margin-left: 30px;
+}
+nav a {
+    text-decoration:none;
+    color: white;
+}
+
+.me:hover{
+    background-color: red;
+}
+
+navbar{
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.logo{
+    font-size: 1.5em;
+    font-weight:bold;
+}
+.you:hover{
+     background-color: skyblue;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logobakery">LOGOBAKERY</div>
+        <nav>
+            <ul>
+                <li><a href="#">service</a></li>
+                <li><a href="#">project</a></li>
+                <li><a href="#">about</a></li>
+                <li class="me"><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header><br>
+    <navbar>
+         <div class="logo">LOGOBAKERY</div>
+         <div class="clearfix"></div>
+         <nav>
+            <ul>
+                <li><a href="#">service</a></li>
+                <li><a href="#">project</a></li>
+                <li><a href="#">about</a></li>
+                <li class="you"><a href="#">contact</a></li>
+            </ul>
+         </nav>
+    </navbar>
+</body>
+</html>

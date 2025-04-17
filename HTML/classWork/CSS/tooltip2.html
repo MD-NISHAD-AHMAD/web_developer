@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+            z-index: 1;
+          }
+          .tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: red;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+          }
+          .tooltip:hover .tooltiptext{
+            visibility: visible;
+          }
+          .normal_text{
+            position: absolute;
+            z-index: 0;
+            color: blue;
+            background: white;
+          }
+
+    </style>
+</head>
+<body style="text-align: center;">
+    <h2>tooltip</h2>
+    <p>move the mouse over the text below</p>
+    <div class="tooltip">
+        Hover over me 
+        <span class="tooltiptext">
+            Bakrid is aorund the corner so lets prepare for it
+        </span>
+    </div>
+      
+    <p class="normal_text">
+       Note that the position of the tooltip text isnt fixed.
+       it will be displayed at the bottom of the tooltip div.fuifuxjtmgvhjmkjlk hjgcgmvfchcnnm frdtytghbvkfkyu 
+       fgfkiioi8y7tfyuk hjgffhji8yvtrcrcyyo uuuhgfnvcfcukyffbf kbll m ncgghyuiuiijh
+    </p> 
+
+</body>
+</html>
