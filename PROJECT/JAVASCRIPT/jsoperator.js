@@ -159,3 +159,62 @@ let newarr =[5, 6, 7, 8];
 let finalArr =[...arr, ...newarr];
 console.log("finalArr:", finalArr);
 
+
+
+
+// here we have to use rest operator 
+
+
+const sum3 = (...args) => {
+
+    console.log("args:", args);
+};
+
+
+sum3(1, 2, 3);
+
+
+
+// conversion into number to binary and binary to number
+
+
+let number= 58;
+
+let binaryconv = number.toString(8);
+
+console.log("binaryconv:", binaryconv);
+
+
+// binary to number
+
+let bin_to_num = parseInt(binaryconv, 2);
+
+console.log("bin_to_num:", bin_to_num);
+
+
+
+// conversion number to string  and string to number
+
+
+
+let num33 = 88;
+console.log("num33:", typeof num33);
+
+let newData = num33.toString();
+console.log("newData:", newData);
+console.log("newData:", typeof newData);
+
+
+let newData1 = string(newData);
+console.log("newData1:", newData1);
+console.log("newData1:", typeof newData1);
+
+let newData2 = Number(newData1);
+console.log("newData2:", newData2);
+console.log("newData2:", typeof newData2);
+
+
+
+
+
+
