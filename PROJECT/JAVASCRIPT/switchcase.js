@@ -84,7 +84,7 @@ switch (month) {
         case 9:
         case 10:
          case 11:
-        console.log("Autumn");
+        console.warn("spring");
         
 
 }
