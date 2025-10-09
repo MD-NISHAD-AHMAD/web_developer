@@ -192,86 +192,125 @@ body{
     color: #666;
 }
 
-.container{
-    background-color: lab(92.65% -0.15 -0.61 / 0.904);
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    padding: 40px;
+.main-menu {
+   background-color: lab(92.65% -0.15 -0.61 / 0.904);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
 }
 
-.text-content{
-    flex: 1;
-    padding-right: 40px;
+/* Left text section */
+.main {
+  flex: 1;
+  min-width: 300px;
 }
 
-.text-content h2{
-    margin-bottom: 10px;
+/* Small heading */
+.main p:first-child {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
 }
 
-.text-content p{
-    margin-bottom: 20px;
-    line-height: 1.6;
+/* Main heading */
+.main h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
-.text-content
-.heroine {
-    background-color: blue;
-    border-radius: 2px;
-    color: white;
+/* Paragraph content */
+.main p:nth-child(3) {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 500px;
 }
 
-.text-content button{
-    color: #333;
-} 
-
-.image-grid{
-    display: grid;
+/* Buttons styling */
+.main button {
+  padding: 12px 28px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* .main-image,
-.secondary-image{
-    border-radius: 10px;
-    overflow: hidden;
+.main button.bnt {
+  background-color: #007BFF;
+  color: #fff;
 }
 
-.main-image img,
-.secondary-image img,
-.secondary-image-left img,
-.secondary-image-right img{
-    display: block;
-    width: 100%;
-    object-fit: cover;
+.main button.bnt:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.secondary-image{
-    display: flex;
-    gap: 10px;
+.main button:not(.bnt) {
+  background-color: #f0f0f0;
+  color: #333;
 }
 
-.secondary-image-left,
-.secondary-image-right{
-    flex: 1;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.main-image{
-    width: 400px;
-    height: 400px;
-}
-
-.secondary-image{
-    width: 400px;
-    height: 400px;
+.main button:not(.bnt):hover {
+  background-color: #ddd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 
-.secondary-image-left,
-.secondary-image-right{
-    width: 140px;
-    height: 400px;
-} */
+
+.main-icon {
+  position: relative;
+  width: 700px; /* container thoda aur bada */
+  height: 400px; /* container height adjust */
+  margin-top: 20px;
+}
+
+/* दूसरा image (office-1) बड़ा और ऊपर */
+.office-1 {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 200px;
+  height: 250px;
+  margin-top:100px;
+  margin: -10px;
+  
+}
+
+/* पहला image (office) office-1 ke niche aur bada */
+.office {
+  position: absolute;
+  top: 180px; /* office-1 ke neeche */
+  bottom: 100px;
+  left: 180px; /* thoda left adjust kiya taaki center me lage */
+  width: 100px; /* bada kiya */
+  height: 180px; /* height bhi bada kiya */
+  margin-top: 80px;
+
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+ 
+}
+
+/* तीसरा image (office-2) thoda right me */
+.office-2 {
+  position: absolute;
+  top: 50px;
+  left: 480px; /* thoda right me shift kiya */
+  width: 250px;
+  height: 180px;
+  margin-left: -10px;
+  
+}
 
 
 .counrty{
@@ -345,7 +384,7 @@ h2{
 
 .state{
     /* border: 1px solid blue; */
-    background-color: lab(92.65% -0.15 -0.61 / 0.904);;
+    background-color: lab(92.65% -0.15 -0.61 / 0.904);
     display: flex;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
@@ -490,7 +529,7 @@ h2{
     background-color: #00bcd4;
     color: black;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 10px 50px;
     border: 1px solid;
     border-radius: 4px;
     font-size: 0.8em;

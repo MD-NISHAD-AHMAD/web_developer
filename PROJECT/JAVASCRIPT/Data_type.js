@@ -49,3 +49,38 @@ let value = {
 };
 
 console.log(value);
+
+
+
+// data type.
+
+
+var str = 'string'; // single quote
+var str = "string"; // double quotes
+
+var str = `string`; // back - tick ---> ternary operator
+
+
+
+var num1 = 19;
+
+var bool = true;
+
+var arr =[1, 2, 3, 4,];  // array of numbers {}
+
+
+var arrayOFobject = [{str: 'name' }, {number: 2}]; // arrayof object
+
+
+
+var obj = {name: 'mehfooz', age: 25};
+
+var und = undefined;
+
+var nul = null;
+
+var sym = symbol()
+
+
+
+const user 
