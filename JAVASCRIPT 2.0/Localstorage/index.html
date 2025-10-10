@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+</head>
+<body>
+    <h1>Nishad, living the best moment of his life.</h1>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button id="btn" onclick="LS_insert()">Add to LS</button>
+
+    <div class="LS"></div>
+
+</body>
+
+<script>
+   let heading_1 = document.getElementsByTagName("h1")[0].innerText;
+   let btn = document.getElementById("btn");
+   let div_LS = document.getElementsByTagName("div")[0];
+
+   function LS_insert() {
+    let input = document.getElementById("name").value;
+    localStorage.setItem("name", input || heading_1); 
+    render_UI();
+   }
+
+   function render_UI() {
+    let LS_Value = localStorage.getItem("name") || "";
+    div_LS.innerHTML = `<p>${LS_Value}</p>`;
+   }
+
+   
+   render_UI();
+</script>
+</html>

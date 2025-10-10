@@ -1,0 +1,79 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+/* Form title */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* Each input container */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Input fields */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Submit button text color */
+form input[type="submit"]:active {
+    background-color: #555555;
+}
+
+/* Error messages */
+span {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: red;
+}
