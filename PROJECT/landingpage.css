@@ -283,7 +283,7 @@ body{
   width: 200px;
   height: 250px;
   margin-top:100px;
-  margin: -10px;
+  margin: -50px;
   
 }
 
@@ -293,7 +293,7 @@ body{
   top: 180px; /* office-1 ke neeche */
   bottom: 100px;
   left: 180px; /* thoda left adjust kiya taaki center me lage */
-  width: 100px; /* bada kiya */
+  width: 170px; /* bada kiya */
   height: 180px; /* height bhi bada kiya */
   margin-top: 80px;
 
@@ -308,7 +308,8 @@ body{
   left: 480px; /* thoda right me shift kiya */
   width: 250px;
   height: 180px;
-  margin-left: -10px;
+  bottom: 100%;
+  margin-left: -40px;
   
 }
 
@@ -404,6 +405,8 @@ h2{
     height: auto;
     border-radius: 8px 0 0 8px;
 }
+
+
 
 .content-section{
     flex: 1;
@@ -693,7 +696,7 @@ p{
 
 
 .container-1{
-    background-color: #fff;
+    background-color: lab(92.65% -0.15 -0.61 / 0.904);
     border-radius: 8px;
     /* box-shadow: 0 0 20px rgba(0,0,0,0.1); */
     display:flex;
@@ -779,5 +782,252 @@ p{
     display: block;
     width: 80%;
     height: 80%;
+    margin-top: 100px;
 }
 
+
+
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+
+/* Large Tablets and Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .headbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 3%;
+  }
+
+  .main_hero {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .main_image {
+    width: 90%;
+    margin: auto;
+  }
+
+  .services .intro {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-icon {
+    width: 90%;
+    height: auto;
+    position: relative;
+  }
+
+  .office,
+  .office-1,
+  .office-2 {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .container-1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .contact-form {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .contact-images {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .ul-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .services h2 {
+    font-size: 1.8em;
+    padding-right: 0;
+  }
+
+  .service-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .state {
+    flex-direction: column;
+  }
+
+  .image-section,
+  .content-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content-section {
+    text-align: center;
+  }
+
+  .quotes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-box {
+    width: 90%;
+  }
+
+  .main_hero h1 {
+    font-size: 36px;
+    margin-left: 0;
+  }
+
+  .main_hero p {
+    font-size: 1em;
+  }
+
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .blog-header p {
+    margin-right: 0;
+  }
+
+  .pricing-section p {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .mi {
+    margin-right: 0;
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .headbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ul-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .auth-button {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main_hero h1 {
+    font-size: 28px;
+  }
+
+  .main_hero p {
+    font-size: 0.95em;
+  }
+
+  .get-started,
+  .lets-started {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .projects-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card,
+  .blog-card {
+    width: 100%;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .quote-box {
+    width: 95%;
+  }
+
+  .container-1 {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .contact-form h1 {
+    font-size: 24px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9em;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
