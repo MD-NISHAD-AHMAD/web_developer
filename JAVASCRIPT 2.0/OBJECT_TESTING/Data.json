@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+       "f_name": "NISHAD",
+       "l_name": "AHMAD",
+       "married": false
+    },
+
+    {
+        "id": 2,
+        "f_name": "RAEES",
+        "l_name": "KHAN",
+        "married": true
+    },
+
+    {
+        "id": 3,
+        "f_name": "SOHAIL",
+        "l_name": "KHAN",
+        "married": false
+
+    },
+
+    {
+        "id": 4,
+        "f_name": "ZAKIA",
+        "l_name": "Sultana",
+        "married": true
+    },
+
+    {
+        "id": 5,
+        "f_name": "RAZIA",
+        "l_name": "Sultana",
+        "married": true
+    }
+]
