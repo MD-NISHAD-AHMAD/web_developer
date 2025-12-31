@@ -20,6 +20,7 @@ export const Counter = () => {
         <h1>Counter{getState().count}</h1>
         <button onClick={()=> dispatch({type: types.INCREMENT})}> Increment +</button>
         <button onClick={()=> dispatch({type: types.DECREMENT})}> Decrement -</button>
+        <button onClick={() => dispatch({ type: types.DOUBLE})}>double</button>
     </>
   );
 };
