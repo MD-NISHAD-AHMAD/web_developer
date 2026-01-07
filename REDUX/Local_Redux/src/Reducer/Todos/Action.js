@@ -1,3 +1,5 @@
 export const ADDTODOS = 'ADDTODOS';
 export const EDITSTODOS = 'EDITSTODOS';
 export const DELETETODOS = 'DELETETODOS';
+export const CONFIRMTODOS = 'CONFIRMTODOS';
+export const CANCELTODOS = 'CANCELTODOS';

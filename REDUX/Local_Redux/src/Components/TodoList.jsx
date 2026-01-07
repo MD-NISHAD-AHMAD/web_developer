@@ -20,9 +20,23 @@ export const TodoList = () => {
       dispatch({ type: types.DELETETODOS, payload: id });
     };
 
+    const handleConfirm = (id, text) => {
+      dispatch({
+        type: types.CONFIRMTODOS,
+        payload: { id, text },
+      });
+    };
+
+    const handleCancel = (id) => {
+      dispatch({
+        type: types.CANCELTODOS,
+        payload: id
+      });
+    };
+
     return (
       <>
-      <h1>TodoList</h1>
+      <h1></h1>
       {value &&
         value.map((el) => {
           return (
@@ -35,12 +49,33 @@ export const TodoList = () => {
               justifyContent: 'space-around',
             }}
             >
+              
+              {el.isEdit ? (
+                <>
+                <input
+                type="text"
+                defaultValue={el.text}
+                onChange={(e) => (el.tempText = e.target.value)}
+                />
+                <button onClick={() => handleConfirm(el.id, el.tempText)}>
+                  confirm
+                </button>
+
+                <button onClick={() => handleCancel(el.id)}>
+                  cancel
+                </button>
+                </>
+              ) : (
+
+              
+                 <>
                <input type="checkbox" />
                <h3>{el.id}</h3>
                <p>{el.text}</p>
                <button onClick={() => handleEdit(el.id)}>edit</button>
                <button onClick={() => handleDelete(el.id)}>delete</button>
-
+              </>
+              )}
             </div>
           );
         })}
