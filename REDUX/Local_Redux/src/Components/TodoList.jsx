@@ -8,9 +8,14 @@ export const TodoList = () => {
    const dispatch = useDispatch();
 
    const value = useSelector((xyz) => {
-    return xyz.todo;
+    return xyz.todos.todo;
    });
-    console.log('---> ~ value:', value);
+    console.log('🚀 ~ TodoList.jsx ~ value:', value);
+    // console.log('---> ~ value:', value);
+    const { token } = useSelector((xyz) => {
+      return xyz.auths
+    })
+    console.log('🚀 ~ TodoList.jsx ~ token:', token);
 
     const handleEdit = (id) => {
       dispatch({ type: types.EDITSTODOS, payload: id });

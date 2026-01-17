@@ -1,22 +1,18 @@
 import React, { useState } from 'react';
 
-export const Login = ({ setIsLogin }) => {
+export const Login = ( {props} ) => {
+
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     const handleLogin = () => {
-        if (username === 'admin' && password === '1234') {
-            setIsLogin(true);
-        } 
-
-        else {
-            alert('wrong credentials');
-        }
+      const payload={email:username,pass:password}
+      props(payload);
+      console.log('🚀 ~ Login.jsx ~ props:', props);
     };
 
      return (
-        <div style={{ width:'300px', margin: '100px auto',}}>
-          
+        <div style={{ width:'300px', margin: '100px auto',}}>          
           <input 
           type="text" 
           placeholder="username"

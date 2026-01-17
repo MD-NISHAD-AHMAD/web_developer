@@ -14,11 +14,16 @@ export const Counter = () => {
     dispatch({ type: types.DECREMENT });
   };
 
+  const handleIncByVal = () => {
+    dispatch({ type: types.INCREMENTBYVALUE, payload: 10 });
+  };
+
   return (
     <>
       <h1>Counter {value}</h1>
       <button onClick={handleInc}>+</button>
       <button onClick={handleDec}>-</button>
+      <button onClick={handleIncByVal}>increment by 5</button>
     </>
   );
 };

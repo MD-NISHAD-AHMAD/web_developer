@@ -1,14 +1,14 @@
-import { useState } from 'react';
 import './App.css';
 import { Todo } from './Pages/Todo';
 import { Login } from './Components/Login';
+import { AllRoutes } from './Routes/AllRoutes_routes';
+import { Counter } from './Components/Counter';
 
 function App() {
-  const [isLogin, setIsLogin] = useState(false);
-
   return (
     <>
-      {isLogin ? <Todo /> : <Login setIsLogin={setIsLogin} />}
+        <AllRoutes />
+     
     </>
   );
 }

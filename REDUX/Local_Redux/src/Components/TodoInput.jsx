@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { useDispatch } from "react-redux";
-import * as types from "../Reducer/Todos/Action";
+import { addTodo } from "../Reducer/Todos/Action";
+import { getLogin} from "../Reducer/AUTH/Action"
+
 
 export const TodoInput = () => {
   const dispatch = useDispatch();
@@ -8,17 +10,17 @@ export const TodoInput = () => {
 
   const handleAdd = () => {
     const valueText = inputData.current.value;
+    dispatch(addTodo(valueText));
 
-    dispatch({
-      type: types.ADDTODOS,
-      payload: valueText,
-    });
+  };
 
-    inputData.current.value = "";
+  const handleLogout = () => {
+    dispatch(getLogin());
   };
 
   return (
     <>
+      <button style={{ display: 'block'}} onClick={handleLogout}>logout</button>
       <h1>Todo</h1>
       <input type="text" ref={inputData} />
       <button onClick={handleAdd}>add</button>
