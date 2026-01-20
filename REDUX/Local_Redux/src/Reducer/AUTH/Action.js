@@ -1,32 +1,27 @@
 /*
-
-login successfull.
-login failure.
-login request.
-
- */
-
-
+login successfull
+login failure
+login request
+*/
 
 export const REMOVE_TOKEN = 'REMOVE_TOKEN';
-
 export const LOGIN_FAILURE = 'LOGIN_FAILURE';
-
 export const LOGIN_REQUEST = 'LOGIN_REQUEST';
-
 export const LOGIN_SUCCESSFULL = 'LOGIN_SUCCESSFULL';
 
 
 const getLogin = () => {
-    return { type: REMOVE_TOKEN };
+  return { type: REMOVE_TOKEN };
 };
 
-const loginSuccessfull = (payload) => {
-    return { type: LOGIN_SUCCESSFULL, payload: payload}
+
+const loginSuccessfull = (payload) => (dispatch) => {
+  dispatch({ type: LOGIN_SUCCESSFULL, payload });
 };
 
-const loginFailure = (payload) => {
-    return { type:LOGIN_FAILURE, payload: payload}
-}
 
-export { getLogin, loginSuccessfull, loginFailure  };
+const loginFailure = (payload) => (dispatch) => {
+  dispatch({ type: LOGIN_FAILURE, payload });
+};
+
+export { getLogin, loginSuccessfull, loginFailure };
