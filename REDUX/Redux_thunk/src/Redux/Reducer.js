@@ -15,12 +15,14 @@ const initialState = {
                 isLoading: true,
             };
 
-        case types.GET_TODOS_SUCCESS:
+        case types.GET_TODOS_FAILURE:
             return {
               ...oldState,
               isLoading: false,
               isError: payload,  
             };
+
+            
             
             default:
                 return oldState

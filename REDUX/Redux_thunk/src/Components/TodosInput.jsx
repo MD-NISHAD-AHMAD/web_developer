@@ -21,5 +21,5 @@ export const TodosInput = () => {
         getApi();
     }, []);
 
-    return <div>TodosInput</div>
+    return <div>TodosInput</div>;
 };
