@@ -1,0 +1,25 @@
+import React from 'react';
+
+import { useDispatch, useSelector} from "react-redux";
+
+import axios from "axios";
+
+import  * as actFunc from '../Redux/Action';
+
+export const TodosInput = () => {
+    const data = useSelector((state) => state.todos);
+    const dispatch = useDispatch();
+
+    const getApi = () => {
+        axios
+        .get('https://localhost:8080/todo')
+        .then((res) => dispatch(actFunc.getTodosSuccess(res)))
+        .catch((err) => console.log(err));
+    };
+
+    React.useEffect(() => {
+        getApi();
+    }, []);
+
+    return <div>TodosInput</div>
+};
