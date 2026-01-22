@@ -1,15 +1,24 @@
 {
-    "todo": [
-       { 
-        "id": 1,
-        "title": "learn_redux",
-        "status": false
+  "todo": [
+    {
+      "id": 1,
+      "title": "learn_redux",
+      "status": false
+    },
+    {
+      "title": "ghop",
+      "status": false,
+      "id": 2
+    },
+    {
+      "title": "meow",
+      "status": false,
+      "id": 3
+    },
+    {
+      "title": "kajal bhosriwali",
+      "status": false,
+      "id": 4
     }
-    ],
-
-    "cart": [
-        {
-           "count": 0
-        }
-    ]
-    }
+  ]
+}
