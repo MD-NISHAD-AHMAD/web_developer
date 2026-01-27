@@ -3,7 +3,7 @@ import { shallowEqual,useDispatch, useSelector } from 'react-redux';
 // import axios from 'axios';
 
 import { TodosInput } from './TodosInput';
-import { getApi } from '../Redux/action';
+import { getApi } from './Redux/action';
 
 export const Todos = () => {
   const {todo, isLoadings, isErrors } = useSelector((state) => {
