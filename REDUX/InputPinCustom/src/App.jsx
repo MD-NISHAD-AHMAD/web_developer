@@ -11,11 +11,12 @@ export const App = () => {
   }
 
   const [Value, setValue] = useState("")
-  console.log('🚀 ~ App.jsx ~ Value:', Value);
+  
 
   return (
     <>
       <InputBox setMainVal={(v) => setValue(v)} perBox={1} length={4} style={style} />
+      <h1>{Value}</h1>
     </>
   )
 
